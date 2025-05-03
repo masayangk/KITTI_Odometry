@@ -1,0 +1,7 @@
+#### 使用データ
+- **KITTI Odometry データセット**  
+  - **velodyne** (ライダー点群データ)  
+  - **calib.txt** (外部パラメータ `Tr`: LiDAR からカメラ座標系への変換行列)  
+- **SemanticKITTI**  
+  - **labels** (各点に対するセマンティックラベル) 
+  - **poses.txt** (セマンティックラベルに対応する姿勢) 

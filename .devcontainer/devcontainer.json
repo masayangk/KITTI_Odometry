@@ -1,0 +1,14 @@
+{
+  "name": "kitti",
+  "service": "kitti",
+  "dockerComposeFile": "docker-compose.yml",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "donjayamanne.python-extension-pack",
+        "github.copilot"
+      ]
+    }
+  }
+}

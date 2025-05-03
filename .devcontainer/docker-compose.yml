@@ -1,0 +1,21 @@
+services: 
+  kitti:
+    container_name: kitti
+    image: kitti:2.5.1-cuda11.8-cudnn9-devel  # イメージ名を指定
+    build:
+      context: .            # Dockerfileのあるディレクトリを指定
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - ..:/workspace
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
+    tty: true
+    shm_size: 2g  # 共有メモリサイズを2GBに設定
