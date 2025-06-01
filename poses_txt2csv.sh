@@ -1,5 +1,5 @@
 #!/bin/sh
-for seq in 00 01 02 05 06 07 08 09 10
+for seq in 00 01 02 03 05 06 07 08 09 10
 do
     python poses_txt2csv.py \
         --sequence ${seq} \

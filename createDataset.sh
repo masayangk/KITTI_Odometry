@@ -1,9 +1,9 @@
 #!/bin/sh
-PROJECT_ROOT=/workspace
+PROJECT_ROOT=/workspace/odometry
 DATASET_ROOT=/workspace/kitti
 
 # データセットの分割とコピー
-for seq in 00 01 02 05 06 07 08 09 10
+for seq in 00 01 02 03 05 06 07 08 09 10
 do
     # ディレクトリ構造の作成
     mkdir -p ${DATASET_ROOT}/train/${seq}/image_2

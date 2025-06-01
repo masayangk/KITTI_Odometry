@@ -9,7 +9,7 @@ from utils import *
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--sequence', '-s', default=0, type=int, help='sequence')
-parser.add_argument('-v', '--voxel_size', default=0.10, type=float, help='Please enter the voxel_size. / Default: 0.10')
+parser.add_argument('--voxel_size', '-v', default=0.10, type=float, help='Please enter the voxel_size. / Default: 0.10')
 args = parser.parse_args()
 
 is_static = lambda label: (label == LABELS['road']) | \

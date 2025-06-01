@@ -1,6 +1,6 @@
 import numpy as np
 
-ROOT_DIR = '/workspace/dataset'
+ROOT_DIR = '/workspace/odometry'
 # ROOT_DIR = '/home/kato/KITTI_Odometry'
 
 # 点群のラベル
